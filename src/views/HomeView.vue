@@ -5,7 +5,7 @@ const message = ref('')
 
 onMounted(async () => {
   try {
-    const res = await fetch('https://serverapi-fn93.onrender.com')
+    const res = await fetch('...')
     message.value = await res.text()
   } catch (err) {
     console.error(err)
