@@ -5,7 +5,7 @@ const message = ref('')
 
 onMounted(async () => {
   try {
-    const res = await fetch('...')
+    const res = await fetch('https://asptest-server.onrender.com')
     message.value = await res.text()
   } catch (err) {
     console.error(err)
